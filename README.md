@@ -1,2 +1,2 @@
-# Millenium_hackerrank
+# Hackerrank coding samples
 HackerRank Coding samples
