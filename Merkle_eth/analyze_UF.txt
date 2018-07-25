@@ -1,0 +1,21 @@
+>m is the number of make-set operations. n is the sum of union/find operations
+
+1. Assuming that join(a,b) makes b the root of a.
+If have a calling sequence of 0.5n calls like joint(1,2), joint(2,3), joint(3,4)
+you can make a chain of 0.5n nodes with 1 in the buttom. Then find(1) will take 0.5n time, so calling that 0.5n times and
+your runtime will be 0.25n^2=O(n^2)
+Since we have to do m makeset operations we end up with O(m+n^2).
+
+2.Weighted-Union
+I assume the weight the size of the set (as opposed to rank).
+For a given set let h be the height of the tree representing it and w its size. find takes at most h time in that set.
+By induction we can prove that the h<=log(w).
+For a single node which has w=1 and h=0 the formula trivially holds.
+Now consider a join between two tree a and b, where a becomes the new root.
+Assuming h<=log(w) holds for a and b we will show it also holds for the union.
+We know that wa>=wb => wab = wa+wb >= 2wb. If a is strictly taller than b we have hab = ha <= log(wa) <= log(wab). Otherwise (when hb >= ha) we have hab = 1+hb <= 1+log(wb) = log(2wb) <= log(wab)
+This proves that h<=log(w) holds. In less mathematical terms
+we have prove that the height of any set is less than the logarithm of its size, so a find takes at most O(log(k)) time where k is the size of the set.
+Let j be the number of union operations. Each union touches 2 elements, so the maximal size of any set is bounded by 2j.
+The runtime of the union and finds is therefore O(j+k log(2j)) = O(n + n log(2n)) = O(n log(n)). Again we must do m makesets,
+so in total we get O(m + n log(n))
