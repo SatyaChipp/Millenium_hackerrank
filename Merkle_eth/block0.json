@@ -1,0 +1,45 @@
+{
+  "hash": "b0",
+  "height": 0,
+  "prevBlock": "0",
+  "time": 1231006505,
+  "txs": [
+    {
+      "hash": "t0",
+      "fee": 0,
+      "index": 0,
+      "inputs": [
+        {
+          "prevout": {
+            "hash": "coinbase",
+            "index": 0
+          },
+          "address": null
+        }
+      ],
+      "outputs": [
+        {
+          "value": 10,
+          "address": "a0"
+        },
+        {
+          "value": 10,
+          "address": "a1"
+        },
+        {
+          "value": 10,
+          "address": "a2"
+        },
+        {
+          "value": 10,
+          "address": "a3"
+        },
+        {
+          "value": 10,
+          "address": "a4"
+        }
+      ],
+      "locktime": 0
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "hash": "b2",
+  "height": 2,
+  "prevBlock": "b1",
+  "time": 1231469744,
+  "txs": [
+    {
+      "hash": "t5",
+      "fee": 0,
+      "index": 0,
+      "inputs": [
+        {
+          "prevout": {
+            "hash": "coinbase",
+            "index": 0
+          },
+          "address": null
+        }
+      ],
+      "outputs": [
+        {
+          "value": 10,
+          "address": "a7"
+        },
+        {
+          "value": 10,
+          "address": "a8"
+        },
+        {
+          "value": 10,
+          "address": "a9"
+        },
+        {
+          "value": 10,
+          "address": "a10"
+        },
+        {
+          "value": 10,
+          "address": "a11"
+        }
+      ],
+      "locktime": 0
+    },
+    {
+      "hash": "t6",
+      "fee": 0,
+      "index": 1,
+      "inputs": [
+        {
+          "prevout": {
+            "hash": "t1",
+            "index": 0
+          },
+          "coin": {
+            "height": 1,
+            "value": 10,
+            "address": "a0",
+            "coinbase": true
+          }
+        },
+        {
+          "prevout": {
+            "hash": "t1",
+            "index": 3
+          },
+          "coin": {
+            "height": 1,
+            "value": 10,
+            "address": "a3",
+            "coinbase": true
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "value": 20,
+          "address": "a6"
+        }
+      ],
+      "locktime": 0
+    },
+    {
+      "hash": "t7",
+      "fee": 0,
+      "index": 2,
+      "inputs": [
+        {
+          "prevout": {
+            "hash": "t1",
+            "index": 4
+          },
+          "coin": {
+            "height": 1,
+            "value": 10,
+            "address": "a4",
+            "coinbase": true
+          }
+        },
+        {
+          "prevout": {
+            "hash": "t5",
+            "index": 0
+          },
+          "coin": {
+            "height": 2,
+            "value": 10,
+            "address": "a7",
+            "coinbase": true
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "value": 20,
+          "address": "a6"
+        }
+      ],
+      "locktime": 0
+    },
+    {
+      "hash": "t8",
+      "fee": 0,
+      "index": 3,
+      "inputs": [
+        {
+          "prevout": {
+            "hash": "t4",
+            "index": 0
+          },
+          "coin": {
+            "height": 1,
+            "value": 20,
+            "address": "a5",
+            "coinbase": true
+          }
+        },
+        {
+          "prevout": {
+            "hash": "t5",
+            "index": 1
+          },
+          "coin": {
+            "height": 2,
+            "value": 10,
+            "address": "a8",
+            "coinbase": true
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "value": 30,
+          "address": "a6"
+        }
+      ],
+      "locktime": 0
+    }
+  ]
+}
