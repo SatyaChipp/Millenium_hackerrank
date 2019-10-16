@@ -19,6 +19,24 @@ Sample Output 0
 [1, 5, 9, 10]
 [9, 5, 1]
 """
+##Solution 1
+import sys
+if __name__ == '__main__':
+    L = []
+    for _ in range(0, int(input())):
+        user_input = input().split(' ')
+        command = user_input.pop(0)
+        if len(user_input) > 0:
+            if 'insert' == command:
+                eval("L.{0}({1}, {2})".format(command, user_input[0], user_input[1]))
+            else:
+                eval("L.{0}({1})".format(command, user_input[0]))
+        elif command == 'print':
+            print(L)
+        else:
+            eval("L.{0}()".format(command))
+
+##Solution 2
 import sys
 if __name__ == '__main__':
     N = int(input())
